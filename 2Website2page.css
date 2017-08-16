@@ -1,0 +1,368 @@
+       
+                               /*BODY*/
+
+body {
+      font-family: Museo-Sans-300,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #333f48;
+    font-weight: 400;
+        margin: 0 auto;
+}
+
+                               /*CONTAINER*/
+.containter {
+
+    margin: 0 auto;
+}
+                               /*HEADER*/
+.header {
+     font-size: 400%;
+    width: 100%;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+
+}
+                               /*Sidebar (hidden) menu*/
+
+#openNav {
+ font-size: 170%;
+    flex-grow: 1;
+    margin:9px;
+
+}
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    list-style: none;
+    text-shadow: 0 2px 3px 0;
+    display: none;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.closebtn:hover {
+    cursor: pointer;
+}
+
+                               /*TOP MENU*/
+.ul-menu {
+    padding-left: 0;
+    cursor: pointer;
+display: flex;
+    z-index:1;
+
+}
+
+.li-menu{
+    font-family: 'Dosis', sans-serif;
+
+    list-style-type: none;
+    line-height: 2;
+    flex-grow: 1;
+    text-decoration: underline;
+  margin:auto;
+  padding: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.35em;
+}
+.li-menu a{
+    text-decoration: none;
+}
+.li-menu:hover {
+    text-decoration: overline;
+    transition: width 3s;
+
+}
+                               /*Photo and description section*/
+.photos {
+    margin-left: 19%;
+    
+}
+.eachphoto {
+    width: 100%; 
+}
+
+
+.eachphoto::after {
+    content: " ";
+    clear: both;
+    display: block;
+}
+
+.photos .eachphoto {
+    margin-bottom: 30px;
+}
+
+.img-2-page {
+    box-shadow: 0px 2px 8px -2px rgba(0,0,0,0.6);
+    margin: 0 1% 0 0;
+    width: 40%;
+    cursor: zoom-in;
+    float: left;
+    overflow: 100;
+}
+
+.clr {
+    clear: both;
+}
+
+                               /*FOOTER */
+.footer {
+     background-color:rgba(3, 169, 244, 0.08);
+width: 100%;
+    display: flex;
+    color: black;
+}
+.footer-menu-bar li:hover {
+    color: darkslateblue;
+    cursor:  pointer;
+    text-decoration: underline;
+}
+
+.footer-menu-bar{
+    float: left;
+    text-align: left;
+    list-style: none;
+    padding-right: 9%;
+
+}
+
+
+                               /*Social Media Icons*/
+.social-media-icons {
+    float: right;
+    margin-right: 2%;
+}
+.fa {
+    opacity: 0.8;
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+.fa:hover {
+    opacity: 1;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+/*------------JQUERY-----------------------*/
+
+
+/*-----------------------------!!!!!---------tablet/ipads (portrait and landscape)*/
+@media only screen and (min-width:1025px) and (max-width:1388px){
+
+
+.li-menu {
+    flex-grow: 1;
+    display: block;
+ }
+.photos {
+    width:  90%;    
+    margin: 0 auto;
+
+}
+   .eachphoto {
+       font-size: 100%;
+   }
+   .img-2-page {
+    transition:width 2s;
+   }
+   
+   .containter {
+       width: 80%;
+       margin: 0 auto;
+       margin-right: 5%;
+       text-align: justify;
+   }
+   .containter >.header {
+       text-align: center;
+   }
+  
+}
+
+/*-----------------------------!!!!!---------tablet/ipads (portrait and landscape)*/
+@media only screen and (min-width:890px) and (max-width:1024px){
+   
+    .ul-menu {
+        margin: 0 auto;
+        padding: 0;
+       
+    }
+  .li-menu {
+      flex-grow: 1;
+      transition: width 2s;
+      margin: auto;
+  }
+    .ul-menu-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    background-color: white;
+    height: 60px;
+    line-height: 2;
+    box-shadow: -1px 3px 7px;
+    transition: 1s;
+    font-size: 80%;
+    width: 100%;
+    padding-left: 0;
+}
+
+   
+     .photos {
+         float: left;
+         margin: 0 15px;
+         text-align: justify;
+     }
+   .footer {
+       font-size: 69%;
+    
+   }
+   .footer-menu-bar{
+        display: grid;
+    flex-grow: 1;
+   }
+}
+
+/*-----------------------------!!!!!---------/*smaller tablets (portrait and landscape)*/
+@media only screen and (min-width:569px) and (max-width:889px){
+span {
+    display: none;
+}
+.ul-menu {
+
+    line-height: 0;  
+}
+.ul-menu .li-menu {
+    text-decoration: none;
+    font-size: 70%;
+    margin: 0;
+    border: 1px solid white;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+.li-menu:hover {
+    background-color: black;
+    color: white;
+}
+.img-2-page {
+    width:100%;
+    transition: 2s;
+    
+}
+.photos {
+    margin: 0 2%;
+}
+}
+/*-----------------------------!!!!!---------/*SMARTPHONES (portrait and landscape)*/
+@media only screen and (min-width:240px) and (max-width:568px){
+ #top{
+       font-size: 200%;
+   }
+
+span {
+    display: none;
+}
+.ul-menu {
+    line-height: 0;  
+}
+.ul-menu .li-menu {
+    text-decoration: none;
+    font-size: 70%;
+    margin: 0;
+    border: 1px solid white;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    color: white;
+    background-color: black;
+}
+.img-2-page {
+    width:100%;
+    
+}
+.photos {
+    margin: 0 2%;
+}
+}
+/*------------------------------!!!!--------/*Very small screen size device*/
+@media only screen and (min-width: 100px) and (max-width:240px) {
+   .header{
+       font-size: 200%;
+   }
+    span {
+    display: none;
+}
+.ul-menu {
+
+    line-height: 0;  
+}
+.ul-menu .li-menu {
+    text-decoration: none;
+    font-size: 90%;
+    margin: 0;
+    border: 1px solid white;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    color: white;
+    background-color: black;
+}
+.img-2-page {
+    width:100%;
+    
+}
+.photos {
+    margin: 0 2%;
+}
+}

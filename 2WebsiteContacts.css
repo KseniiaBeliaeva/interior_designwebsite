@@ -1,0 +1,88 @@
+
+#contact-form {
+ width:50%;
+ margin:0 auto;
+ margin:15px auto;
+
+
+}
+#contact-form::after {
+content: "";
+display: table;
+clear: both;
+}
+label {
+    display: block;
+}
+.contact-form {
+    
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-top: 1px solid #f1f1f1;
+     border-bottom: 1px solid #f1f1f1;
+     border-left:none; 
+          border-right:none; 
+    box-sizing: border-box;
+}
+.message {
+    height: 200px;
+    line-height: normal;
+}
+#login-button {
+    background-color: lightblue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+#login-button:hover {
+    opacity: 0.8;
+    background-color: lavender;
+}
+.required-sign {
+    color: red;
+}
+.cancelbtn {
+    float: left;
+    padding: 10px 18px;
+    background-color: #f44336;
+    border: 1px solid #f44336;
+}
+
+#login-avatar {
+    width: 20%;
+    border-radius: 50%;
+    padding: 25px 0;
+}
+
+.container {
+    background-color:#f1f1f1;
+    height: 15%;
+    padding: 15px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media (max-width: 300px) {
+#contact-form {
+       width: 100%;
+       margin: 0;
+   }
+   
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
