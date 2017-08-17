@@ -93,11 +93,12 @@ display: flex;
 }
 .li-menu a{
     text-decoration: none;
+      
+
 }
 .li-menu:hover {
-    text-decoration: overline;
+    text-decoration: none;
     transition: width 3s;
-
 }
                                /*Photo and description section*/
 .photos {
@@ -272,14 +273,16 @@ width: 100%;
 
 /*-----------------------------!!!!!---------/*smaller tablets (portrait and landscape)*/
 @media only screen and (min-width:569px) and (max-width:889px){
-span {
+#openNav {
     display: none;
 }
 .ul-menu {
-
-    line-height: 0;  
+line-height: 0;  
+display: flex;
+flex-wrap: wrap;
 }
-.ul-menu .li-menu {
+.li-menu {
+    order: 1;
     text-decoration: none;
     font-size: 70%;
     margin: 0;
@@ -314,18 +317,30 @@ span {
     display: none;
 }
 .ul-menu {
-    line-height: 0;  
+ margin: 0;
+ left:0;
+ width: 100%;
+
 }
-.ul-menu .li-menu {
+.ul-menu {
+content: "";
+display: table;
+clear: both;
+}
+.li-menu {
     text-decoration: none;
     font-size: 70%;
     margin: 0;
     border: 1px solid white;
     text-align: center;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    color: white;
-    background-color: black;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    color: black;
+    background-color: white;
+}
+a:hover {
+    color:gray;
+    text-decoration: underline;
 }
 .img-2-page {
     width:100%;
@@ -334,9 +349,9 @@ span {
 .photos {
     margin: 0 2%;
 }
-}
+  }
 /*------------------------------!!!!--------/*Very small screen size device*/
-@media only screen and (min-width: 100px) and (max-width:240px) {
+/* @media only screen and (min-width: 100px) and (max-width:240px) {
    .header{
        font-size: 200%;
    }
@@ -365,4 +380,4 @@ span {
 .photos {
     margin: 0 2%;
 }
-}
+}   */
