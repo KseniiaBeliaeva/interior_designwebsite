@@ -137,7 +137,7 @@ display: flex;
 .footer {
      background-color:rgba(3, 169, 244, 0.08);
 width: 100%;
-    display: flex;
+    display: block;
     color: black;
 }
 .footer-menu-bar li:hover {
@@ -157,8 +157,7 @@ width: 100%;
 
                                /*Social Media Icons*/
 .social-media-icons {
-    float: right;
-    margin-right: 2%;
+display: grid;
 }
 .fa {
     opacity: 0.8;
@@ -197,6 +196,25 @@ width: 100%;
 /*-----------------------------!!!!!---------tablet/ipads (portrait and landscape)*/
 @media only screen and (min-width:1025px) and (max-width:1388px){
 
+/*if screen < 1024*/
+.ul-menu-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    background-color: white;
+    height: 60px;
+    box-shadow: -1px 3px 7px;
+    transition: 1s;
+    font-size: 80%;
+    width: 100%;
+    padding-left: 0;
+}
+.fixed-sidenav {
+    position: fixed;
+    top: 60px;
+}
 
 .li-menu {
     flex-grow: 1;
@@ -266,13 +284,33 @@ width: 100%;
     
    }
    .footer-menu-bar{
-        display: grid;
+    display: grid;
     flex-grow: 1;
    }
 }
 
 /*-----------------------------!!!!!---------/*smaller tablets (portrait and landscape)*/
 @media only screen and (min-width:569px) and (max-width:889px){
+    /*if screen < 1024*/
+.ul-menu-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    background-color: white;
+    height: 60px;
+    box-shadow: -1px 3px 7px;
+    transition: 1s;
+    font-size: 80%;
+    width: 100%;
+    padding-left: 0;
+}
+.fixed-sidenav {
+    position: fixed;
+    top: 60px;
+}
+
 #openNav {
     display: none;
 }

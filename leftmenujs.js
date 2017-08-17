@@ -9,7 +9,6 @@ var sidenav = [{ href: 'all', title: 'Designs' },
     , { href: 'facades', title: 'Facades' }, { href: 'collections', title: 'Collections' }, { href: 'inspiration', title: 'Inspiration' }
 ];
 
-debugger;
 function leftMenu(leftnavmenu) {
     var listHtml = '';
     for (var i = 0; i < sidenav.length; i++) {
