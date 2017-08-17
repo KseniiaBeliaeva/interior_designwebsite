@@ -13,7 +13,7 @@ var sidenav = [{ href: 'All', title: 'Designs' },
 function leftMenu(leftnavmenu) {
     var listHtml = '';
     for (var i = 0; i < sidenav.length; i++) {
-        listHtml += '<li class ="left-nav-menu"><a href="2Website' + sidenav[i].href + '.html">'
+        listHtml += '<li class ="left-nav-menu"><a href=' + sidenav[i].href + '.html">'
             + sidenav[i].title + '</a></li>';
     }
 
