@@ -5,7 +5,7 @@
 }
 
 .interior-image {
-width: 80%;  
+width: 100%;  
 }
 .login-wrap {
     width: 80%;
@@ -24,7 +24,6 @@ width: 80%;
 }
 
 .add-to-favorite {
-    float: right;
     background-color: white; 
     color: black; 
     border: 2px solid #4CAF50;
@@ -35,7 +34,6 @@ width: 80%;
 }
 .hidden-text {
     display: none;
-    line-height: 1.5;
     margin: 20px 40px;
 }
 .hidden-text:after {

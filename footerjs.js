@@ -6,9 +6,9 @@ var footerlink1 = [{ link: 'design-milk.com/category/architecture/', description
     description: 'bright.bazaar'}, { link: 'www.homeshoppingspy.com/', description: 'HomeShoppingSpy' },
 { link: 'www.roomenvy.co.uk/', description: 'RoomEnvy' }];
 
-var footerlink2 = [{ link: 'All', description: 'Designs' },
-{ link: 'Kitchen', description: 'Kitchens' }, { link: 'Bathroom', description: 'Bathrooms' },
-{ link: 'Bedroom', description: 'Bedrooms' }, { link: 'Livingroom', description: 'Living' }];
+var footerlink2 = [{ link: 'all', description: 'Designs' },
+{ link: 'kitchen', description: 'Kitchens' }, { link: 'bathroom', description: 'Bathrooms' },
+{ link: 'bedroom', description: 'Bedrooms' }, { link: 'livingroom', description: 'Living' }];
 
 function footer(footermenu) {
     var footerlinks = '';

@@ -1,6 +1,3 @@
-
-
-
 function images(galleryInterior, type) {
     for (var i = 0; i < galleryInterior.length; i++) {
         var path = '<div class="interior-img-block"><img class="interior-image" src="img/' + type +
