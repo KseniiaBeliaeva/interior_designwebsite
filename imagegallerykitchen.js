@@ -1,8 +1,12 @@
 
 
-var interior = [{ number: 1, text: 'The room is in white and  light-pink colors' }, { number: 2, text: 'Country style white kitchen' },
-{ number: 3, text: 'Some text bla bla' }, { number: 4, text: 'Some text bla bla' },
-{ number: 5, text: 'Some text bla bla' }, { number: 6, text: 'Some text bla bla' }];
+let interior = [
+    { number: 1, text: 'Nulla sem eros, maximus ut suscipit eu' },
+    { number: 2, text: 'Sed fringilla tempus metus' },
+    { number: 3, text: 'Nulla sem eros, maximus ut suscipit eu' },
+    { number: 4, text: 'Sed fringilla tempus metus' },
+    { number: 5, text: 'Sed fringilla tempus metus' },
+    { number: 6, text: 'Nulla sem eros, maximus ut suscipit eu' }];
 
 
 images(interior, 'kitchen');

@@ -73,4 +73,7 @@ span.psw {
     .cancelbtn {
        width: 100%;
     }
+    .contact-form_description {
+        padding: 5%;
+    }
 }

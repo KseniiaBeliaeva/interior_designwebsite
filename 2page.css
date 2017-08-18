@@ -341,6 +341,11 @@ flex-wrap: wrap;
 .photos {
     margin: 0 2%;
 }
+#contact-form {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
 }
 /*-----------------------------!!!!!---------/*SMARTPHONES (portrait and landscape)*/
 @media only screen and (min-width:240px) and (max-width:568px){
@@ -385,36 +390,21 @@ a:hover {
 .photos {
     margin: 0 2%;
 }
+/* CONTACT FORM */
+.ul-m-contacts {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 5px;
+}
+.m-contacts {
+    order: 1;
+}
+.m-contacts:first{
+    padding-left: 5px;
+}
+
+#contact-form_description{
+        padding: 5%;
+}
 
   }
-/*------------------------------!!!!--------/*Very small screen size device*/
-/* @media only screen and (min-width: 100px) and (max-width:240px) {
-   .header{
-       font-size: 200%;
-   }
-    span {
-    display: none;
-}
-.ul-menu {
-
-    line-height: 0;  
-}
-.ul-menu .li-menu {
-    text-decoration: none;
-    font-size: 90%;
-    margin: 0;
-    border: 1px solid white;
-    text-align: center;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    color: white;
-    background-color: black;
-}
-.img-2-page {
-    width:100%;
-    
-}
-.photos {
-    margin: 0 2%;
-}
-}   */

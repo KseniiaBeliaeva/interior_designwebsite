@@ -2,11 +2,19 @@ function print(message) {
     document.write(message);
 }
 
-var sidenav = [{ href: 'All', title: 'Designs' },
-{ href: 'Kitchen', title: 'Kitchens' }, { href: 'Bathroom', title: 'Bathrooms' },
-{ href: 'Bedroom', title: 'Bedrooms' }, { href: 'Livingroom', title: 'Living' }, { href: 'Diningroom', title: 'Dining' }
-    , { href: 'Outdoors', title: 'Outdoors' }, { href: 'Pools', title: 'Pools' }, { href: 'Gardens', title: 'Gardens' }
-    , { href: 'Facades', title: 'Facades' }, { href: 'Collections', title: 'Collections' }, { href: 'Inspiration', title: 'Inspiration' }
+var sidenav = [
+{ href: 'all', title: 'Designs' },
+{ href: 'kitchen', title: 'Kitchens' },
+{ href: 'bathroom', title: 'Bathrooms' },
+{ href: 'bedroom', title: 'Bedrooms' },
+{ href: 'livingroom', title: 'Living' },
+{ href: 'diningroom', title: 'Dining' },
+{ href: 'outdoors', title: 'Outdoors' },
+{ href: 'pools', title: 'Pools' },
+{ href: 'gardens', title: 'Gardens' },
+{ href: 'facades', title: 'Facades' },
+{ href: 'collections', title: 'Collections' },
+{ href: 'inspiration', title: 'Inspiration' }
 ];
 
 
