@@ -20,7 +20,7 @@ var sidenav = [
 
 function leftMenu(leftnavmenu) {
     var listHtml = '';
-    for (var i = 0; i < sidenav.length; i++) {
+    for (let i = 0; i < sidenav.length; i++) {
         listHtml += '<li class ="left-nav-menu"><a href=' + sidenav[i].href + '.html">'
             + sidenav[i].title + '</a></li>';
     }

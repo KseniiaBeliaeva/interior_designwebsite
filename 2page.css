@@ -349,14 +349,18 @@ flex-wrap: wrap;
 }
 /*-----------------------------!!!!!---------/*SMARTPHONES (portrait and landscape)*/
 @media only screen and (min-width:240px) and (max-width:568px){
+
  #top{
        font-size: 200%;
+           margin-bottom: 5%;
+
    }
 
 span {
     display: none;
 }
 .ul-menu {
+
  top: 45;
  margin: 0;
  left:0;
@@ -365,8 +369,13 @@ span {
 }
 .ul-menu {
 content: "";
-display: table;
+display: none;
 clear: both;
+}
+.popup-menu {
+    display: block;
+    font-size:24px;
+    float: left;
 }
 .li-menu {
     text-decoration: none;
