@@ -70,6 +70,9 @@ body {
 }
 
                                /*TOP MENU*/
+i.material-icons{
+    display: none;
+}                               
 .ul-menu {
     padding-left: 0;
     cursor: pointer;
@@ -79,8 +82,7 @@ display: flex;
 }
 
 .li-menu{
-    font-family: 'Dosis', sans-serif;
-
+    font-family: 'Playfair Display', serif;
     list-style-type: none;
     line-height: 2;
     flex-grow: 1;
@@ -99,7 +101,10 @@ display: flex;
 .li-menu:hover {
     text-decoration: none;
     transition: width 3s;
+    color: white;
+    background-color: #89C4F4;
 }
+
                                /*Photo and description section*/
 .photos {
     margin-left: 19%;
@@ -157,14 +162,12 @@ width: 100%;
 
                                /*Social Media Icons*/
 .social-media-icons {
-display: grid;
+display: inline-block;
 }
 .fa-navicon {
     display: none;
 }
-.-menu{
-    display: none;
-}
+
 .fa {
     opacity: 0.8;
     padding: 20px;
@@ -203,12 +206,7 @@ display: grid;
 @media only screen and (min-width:1025px) and (max-width:1388px){
 
 /*if screen < 1024*/
-i {
-    display: none;
-}
- .-menu {
-       display: none;
-   }
+
 .ul-menu-fixed {
     position: fixed;
     top: 0;
@@ -331,25 +329,23 @@ i {
 #openNav {
     display: none;
 }
-.ul-menu {
-line-height: 0;  
-display: flex;
-flex-wrap: wrap;
+
+i.material-icons{
+    display: block;
+    position: absolute;
+    top: 38px;
+    left: 10px;
+
 }
 .li-menu {
-    order: 1;
-    text-decoration: none;
-    border: 1px solid white;
-    padding-bottom: 15px;
-    padding-top: 15px;
     color: black;
-    background-color: white;
-    border: 1px solid black;
+  text-decoration: none;
+    margin: 0;
+    padding: 0;
+    line-height: 60px;
+    font-size: 10px;
 }
-.li-menu:hover {
-    background-color: black;
-    color: white;
-}
+
 .img-2-page {
     width:100%;
     transition: 2s;
@@ -376,24 +372,18 @@ flex-wrap: wrap;
 span {
     display: none;
 }
+.material-icons {
+    display: block;
+}
 .ul-menu {
-
+display: none;
  top: 45;
  margin: 0;
  left:0;
  width: 100%;
 
 }
-.ul-menu {
-content: "";
-display: none;
-clear: both;
-}
-.-menu {
-    display: block;
-    font-size:24px;
-    float: left;
-}
+
 .li-menu {
     text-decoration: none;
     font-size: 70%;
@@ -418,15 +408,13 @@ a:hover {
 }
 /* CONTACT FORM */
 .ul-m-contacts {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 5px;
+direction: none !important;
 }
-.m-contacts {
-    order: 1;
-}
-.m-contacts:first{
-    padding-left: 5px;
+i.material-icons{
+    display: block;
+    position: absolute;
+    left: 30px;
+    top: 10px;
 }
 
 #contact-form_description{
