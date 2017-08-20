@@ -159,6 +159,12 @@ width: 100%;
 .social-media-icons {
 display: grid;
 }
+.fa-navicon {
+    display: none;
+}
+.-menu{
+    display: none;
+}
 .fa {
     opacity: 0.8;
     padding: 20px;
@@ -197,6 +203,12 @@ display: grid;
 @media only screen and (min-width:1025px) and (max-width:1388px){
 
 /*if screen < 1024*/
+i {
+    display: none;
+}
+ .-menu {
+       display: none;
+   }
 .ul-menu-fixed {
     position: fixed;
     top: 0;
@@ -246,7 +258,12 @@ display: grid;
 
 /*-----------------------------!!!!!---------tablet/ipads (portrait and landscape)*/
 @media only screen and (min-width:890px) and (max-width:1024px){
-   
+   i {
+    display: none;
+}
+    .-menu {
+       display: none;
+   }
     .ul-menu {
         margin: 0 auto;
         padding: 0;
@@ -372,7 +389,7 @@ content: "";
 display: none;
 clear: both;
 }
-.popup-menu {
+.-menu {
     display: block;
     font-size:24px;
     float: left;
