@@ -39,11 +39,15 @@ width: 100%;
     display: none;
     margin: 20px 40px;
 }
-.hidden-text:after {
+.hidden-text p{
+    margin: 0;
+    padding-bottom: 3%;
+}
+/* .hidden-text:after {
     content: " ";
     clear: right;
     display: block;
-}
+} */
 
 .right-align__frame {
     width:10%;
