@@ -90,11 +90,12 @@ display: flex;
     list-style-type: none;
     line-height: 2;
     flex-grow: 1;
-    text-decoration: underline;
+    text-decoration: none;
   margin:auto;
   padding: 0;
   text-transform: uppercase;
   letter-spacing: 1px;
+  text-align: center;
   font-size: 1.35em;
 }
 .li-menu a{
@@ -143,6 +144,9 @@ display: flex;
 }
 
                                /*FOOTER */
+.footer-copyright {
+    text-align: center;
+}
 .footer {
      background-color:rgba(3, 169, 244, 0.08);
 width: 100%;
@@ -207,6 +211,8 @@ display: inline-block;
   color: white;
 }
 
+/*TEAM*/
+
 /*------------JQUERY-----------------------*/
 
 
@@ -259,6 +265,19 @@ display: inline-block;
    .containter >.header {
        text-align: center;
    }
+   /*TEAM*/
+   .team-container{
+       margin: 0 auto;
+   }
+   .team-col{
+       width: 49%;
+       float: left;
+       margin: 3px;
+   }
+   .team-col img {
+       width: 421px;
+       height:537.5px;
+   }
   
 }
 
@@ -270,6 +289,7 @@ display: inline-block;
     .ul-menu {
         margin: 0 auto;
         padding: 0;
+        margin-bottom: 3%;
     }
   .li-menu {
       transition: width 2s;
@@ -303,6 +323,34 @@ display: inline-block;
        font-size: 69%;
     
    }
+   /*TEAM*/
+.team-container {
+    width: 90%;
+    margin: 0 auto;
+}
+.team-container::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+.team-col{
+    float: left;
+    width: 48%;
+    background-color: ghostwhite;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-top: 20px;
+
+
+}
+.team-col img {
+    width: 216px;
+    height: 300px;
+    border-radius: 3%;
+}
+.team-position{
+    font-size: 25px;
+}
 
 }
 
@@ -346,7 +394,7 @@ i.material-icons{
     margin: 0;
     padding: 0;
     line-height: 60px;
-    font-size: 10px;
+    font-size: 17px;
 }
 
 .img-2-page {
@@ -361,6 +409,35 @@ i.material-icons{
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
+}
+
+/*TEAM*/
+.team-container {
+    width: 90%;
+    margin: 0 auto;
+}
+.team-container::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+.team-col{
+    float: left;
+    width: 48%;
+    background-color: ghostwhite;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-top: 20px;
+
+
+}
+.team-col img {
+    width: 216px;
+    height: 300px;
+    border-radius: 3%;
+}
+.team-position{
+    font-size: 20px;
 }
 }
 /*-----------------------------!!!!!---------/*SMARTPHONES (portrait and landscape)*/
@@ -377,9 +454,8 @@ span {
 }
 
 .ul-menu {
-display: none;
+display: flex;
  top: 45;
- margin: 0;
  left:0;
  width: 100%;
 
@@ -420,5 +496,37 @@ i.material-icons{
 #contact-form_description{
         padding: 5%;
 }
+
+/*TEAM*/
+.team-container{
+    width: 100%;
+}
+.team-container::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.team-col{
+  width: 100%;
+  position: relative;
+  
+}
+.team-col img {
+    width: 66%;
+}
+.team-descr-container {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+}
+.team-position {
+    font-size: 15px;
+}
+.team-name{
+    font-size: 15px;
+
+}
+
+
 
   }
