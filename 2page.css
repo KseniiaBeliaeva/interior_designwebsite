@@ -146,12 +146,20 @@ display: flex;
                                /*FOOTER */
 .footer-copyright {
     text-align: center;
+    margin: 0;
 }
 .footer {
      background-color:rgba(3, 169, 244, 0.08);
 width: 100%;
     display: block;
     color: black;
+    
+}
+.footer-down {
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ right: 0;
 }
 .footer-menu-bar li:hover {
     color: darkslateblue;
@@ -394,7 +402,7 @@ i.material-icons{
     margin: 0;
     padding: 0;
     line-height: 60px;
-    font-size: 17px;
+    font-size: 13px;
 }
 
 .img-2-page {
